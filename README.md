@@ -1,4 +1,3 @@
-##### Author: Allana Gibson 
 ##### [LinkedIn](https://www.linkedin.com/in/allana-gibson/)
 
 ## KeyLogger Project
@@ -7,6 +6,8 @@
 #### Reasons for use:
 1. Hackers trying to access **personal data**.
 2. IT organizations attempting to troubleshoot **technical problems**.
+
+- I did this for educational research ONLY.
 
 ### Here is the source code of my program (in python):
 
@@ -28,4 +29,4 @@ with Listener(on_press=on_press) as listener:
 - The user will have to terminate the program in `Task Manager` to end the application.
 
 ### Here is a picture of the output file:
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![snippen2](https://user-images.githubusercontent.com/53357849/154188508-899104ba-b2a2-4264-bd5e-d8b9ad0b3fdc.png)
