@@ -1,5 +1,6 @@
 ##### [LinkedIn](https://www.linkedin.com/in/allana-gibson/)
 ##### [Merit Page](https://meritpages.com/Allana-Gibson/5963308)
+##### [Resume](https://github.com/Allana-Gibson/Personal-Projects/files/8082930/Allana_Gibson_Resume.1.pdf)
 
 ## KeyLogger Project
 
