@@ -24,9 +24,10 @@ def on_press(key):
 
 with Listener(on_press=on_press) as listener:
     listener.join()
+
 ```
-##### The output will extract a `.txt` file on to the folder displaying every keystroke pressed.
-##### The user will have to terminate the program in `Task Manager` to end the application.
+- The output will extract a `.txt` file on to the folder displaying every keystroke pressed.
+- The user will have to terminate the program in `Task Manager` to end the application.
 
 ### Here is a picture of the output file:
 ![snippen2](https://user-images.githubusercontent.com/53357849/154188508-899104ba-b2a2-4264-bd5e-d8b9ad0b3fdc.png)
